@@ -1,0 +1,13 @@
+# Site settings
+title: Vasiliy Karasev
+email: karasev00@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  UCLA Vision Lab Vasiliy Karasev
+baseurl: ""
+url: "https://vasiliykarasev.github.io" # the base hostname & protocol for your site
+github_username:  vasiliykarasev
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
