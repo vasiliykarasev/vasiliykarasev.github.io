@@ -1,0 +1,92 @@
+h1 {
+	color: rgb(50,50,50);
+}
+
+h2 {
+	color: rgb(80,80,80);
+}
+
+body {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 1em;
+	padding-right: 1em;
+	background: url(billie_holiday.png) repeat 0 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	max-width: 60em;
+	color: rgb(70,70,70);
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#navigation
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 200px;
+	background-color: rgb(150,150,150);
+    border: 1px solid rgb(200,200,200);
+}
+
+#content
+{
+	border-left: 150px solid rgb(150,150,150);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-right: 1px solid rgb(200,200,200);
+    border-bottom: 1px solid rgb(200,200,200);
+    border-top: 1px solid rgb(200,200,200);
+	height: 200px;
+    width: 560px;
+	background-color: rgb(100,100,100);
+   	background: url(billie_holiday2.png) repeat 0 0;
+}
+		
+#container
+{
+	position: relative;
+	width: 725px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+    padding-top: 0em;
+}
+
+a {
+  color: rgb(100,100,230);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(130,130,200);
+}
+ 
+code {
+  line-height: 1.2em; 
+  color: #191919;
+}
+
+hr.dashed {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+.supercontainer {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+    bottom: 0;    
+    border: 0px solid black;
+}
+.centercontainer {
+    position: relative;
+}

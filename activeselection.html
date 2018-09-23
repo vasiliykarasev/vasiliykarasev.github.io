@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" href="css/fluidity.css"></link>
+<link rel="stylesheet" href="css/activeselection.css"></link>
+<title>Active Frame, Location, and Detector Selection for Automated and Manual Video Annotation</title>
+<meta property="og:title" content="Active Frame, Location, and Detector Selection for Automated and Manual Video Annotation" />                          
+<meta property="og:locale" content="en_US" />                                   
+<meta name="description" content="UCLA Vision Lab Active Frame, Location, and Detector Selection for Automated and Manual Video Annotation" />           
+<meta property="og:description" content="UCLA Vision Lab Active Frame, Location, and Detector Selection for Automated and Manual Video Annotation" />    
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24988729-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<h1>Active Frame, Location, and Detector Selection for Automated and Manual Video Annotation</h1>
+
+<h2>Abstract</h2>
+
+<p>We describe an information-driven active selection approach to determine <em>which detectors</em> to deploy at <em>which location</em> in <em>which frame</em> of a video shot to minimize semantic class label uncertainty at every pixel, with the smallest computational cost that ensures a given uncertainty bound. We show minimal performance reduction compared to a "paragon" algorithm running all detectors at all locations in all frames, at a small fraction of the computational cost. Our method can handle uncertainty in the labeling mechanism, so it can handle both "oracles" (manual annotation) or noisy detectors (automated annotation).</p>
+
+<h2>Overview</h2>
+
+<p><img src="data/activeselection/aoverview.png" width=600 style="display:block; margin-left:auto; margin-right:auto;"></p>
+
+<h2>Results</h2>
+
+<p>Several video examples of the ''baseline'' (all frames labeled without temporal consistency) and our approach (using 20% frames and temporal consistency) can be seen <a href="https://vimeo.com/291381709">here</a> (4Mb). Below we show several still frames.</p>
+
+<p><img src="data/activeselection/results_baseline.jpg" width=600 style="display:block; margin-left:auto; margin-right:auto;"></p>
+
+<h2>Code and dataset</h2>
+
+<p>MATLAB implementation of the algorithms described in the paper and data can be downloaded <a href="http://vision.ucla.edu/activeselection/activeselection.zip">here</a> (320 Mb).</p>
+
+<p>To evaluate our approach we use video sequences from Human-Assisted Motion [1], ViSOR [2], MOSEG [3], Berkeley Video Segmentation [4], as well as additional videos from Flickr. Frames from these sequences are shown below. Pixelwise ground truth annotations and frames from our sequences can be downloaded <a href="http://vision.ucla.edu/activeselection/activeselection_annotation.zip">here</a> (240 Mb). <br>
+<em>Note that the ''Flickr'' videos were downloaded from the internet, and may be subject to copyright. We do not own the copyright and only provide the images for non-commercial research purposes.</em></p>
+
+<p><img src="data/activeselection/overview_14x2.jpg"></p>
+
+<p>If you use this work in your research, please cite our paper:</p>
+
+<ul>
+<li>V. Karasev, A. Ravichandran and S. Soatto<br>
+<a href="http://vision.ucla.edu/papers/karasevRS14.pdf">Active Frame, Location, and Detector Selection for Automated and Manual Video Annotation</a><br>
+In CVPR, 2014.</li>
+</ul>
+
+<h2>References</h2>
+
+<ol>
+<li><p>C. Liu, W. T. Freeman, E. H. Adelson, and Y. Weiss. Human-assisted motion annotation. In CVPR, 2008</p></li>
+<li><p>R. Vezzani and R. Cucchiara. Video surveillance online repository (ViSOR): an integrated framework. Multimedia Tools Appl., 2010.</p></li>
+<li><p>T. Brox and J. Malik. Object segmentation by long term analysis of point trajectories. In ECCV, 2010</p></li>
+<li><p>P. Sundberg, T. Brox, M. Maire, P. Arbelaez, and J. Malik.
+Occlusion boundary detection and figure/ground assignment from optical flow. In CVPR, 2011.</p></li>
+</ol>
+
+<hr/>
+
+<p>Please report problems with this page to <a href="mailto:karasev00@gmail.com">Vasiliy Karasev</a>.</p>

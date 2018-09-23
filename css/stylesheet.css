@@ -1,7 +1,7 @@
 body {
 	padding-top: 10px;
 	padding-bottom: 20px;
-	background: url(data/billie_holiday.png) repeat 0 0;
+	background: url(billie_holiday.png) repeat 0 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
@@ -37,7 +37,7 @@ a:hover {
     padding-left: 5px;
     padding-right: 5px;
     overflow: hidden;
-   	background: url(data/billie_holiday2.png) repeat 0 0;
+   	background: url(billie_holiday2.png) repeat 0 0;
 }
 
 #proj {
