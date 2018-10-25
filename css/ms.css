@@ -1,0 +1,53 @@
+body
+{
+	margin-left: auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	background: url(billie_holiday.png) repeat 0 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgb(70,70,70);
+}
+
+#box
+{
+	position: relative;
+    width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-top: 0.25em;
+	margin-bottom: 0.25em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+
+    border: 1px solid rgb(200,200,200);
+    background: url(billie_holiday2.png) repeat 0 0;
+}
+
+h2 {
+  margin-top: -0.1em;
+}
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+figure {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1px; /* This can be any width, so long as it's narrower than any image */
+}
+img {
+    display: table-row;
+}
+figcaption {
+    display: table-row;
+    font-size: smaller;   
+    font-style: italic; 
+    line-height: 1.5em;
+}
