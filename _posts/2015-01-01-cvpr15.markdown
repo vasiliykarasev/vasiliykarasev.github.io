@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Causal video object segmentation from persistence of occlusions"
+image: /images/cvpr15.png
+categories: research
+authors: "B. Taylor, V. Karasev, and S. Soatto"
+venue: "CVPR"
+oral: yes
+pdf: https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Taylor_Causal_Video_Object_2015_CVPR_paper.pdf
+details: http://brianrtaylor.github.io/cvos/
+id: cvpr15
+video: "https://www.youtube.com/watch?v=A6xTzfwPkVM"
+bibtex: "@incollection{taylorKS15,
+\n  author = {Taylor, B. and Karasev, V. and Soatto, S.},
+\n  title = {Causal Video Object Segmentation from Persistence of Occlusions},
+\n  booktitle = {CVPR},
+\n  year = {2015},
+\n  month = {June}
+\n}"
+---
+We show how to exploit occlusions to discover salient objects in video.

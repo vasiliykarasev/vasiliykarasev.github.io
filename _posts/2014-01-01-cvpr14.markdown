@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Active frame, location, and detector selection for automated and manual video annotation"
+image: /images/cvpr14.png
+categories: research
+authors: "V. Karasev, A. Ravichandran, and S. Soatto"
+venue: "CVPR"
+pdf: https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Karasev_Active_Frame_Location_2014_CVPR_paper.pdf
+details: /activeselection
+video: "https://vimeo.com/291381709"
+id: cvpr14
+bibtex: "@inproceedings{karasevRS14,
+\n  author = {Karasev, V. and Ravichandran, A. and Soatto, S.},
+\n  title = {Active Frame, Location, and Detector Selection for Automated and Manual Video Annotation},
+\n  booktitle = {CVPR},
+\n  year = {2014},
+\n  month = {June}
+\n}"
+---
+How to choose where and which detectors to run (or m-turks to query), if we can run only a few of them? We answer this question using the ''information gathering'' framework, and show results on semantic video segmentation.

@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Temporal presentation protocols in stereoscopic displays: flicker visibility, perceived motion, and perceived depth"
+image: /images/jsid11.png
+categories: research
+authors: "D. Hoffman, V. Karasev, and M. Banks"
+venue: "Journal of the Society for Information Display"
+pdf: http://onlinelibrary.wiley.com/doi/10.1889/JSID19.3.271/abstract
+id: jsid11
+bibtex: "@incollection{hoffmanKB11,
+\n  author = {Hoffman, D. and Karasev, V. and Banks, M.},
+\n  title = {Temporal presentation protocols in stereoscopic displays: flicker visibility, perceived motion, and perceived depth},
+\n  booktitle = {Journal of the Society for Information Display},
+\n  year = {2011}
+\n}"
+---
+We studied how different 3D display presentation methods affect flicker, motion artifacts, and errors in perceived depth.

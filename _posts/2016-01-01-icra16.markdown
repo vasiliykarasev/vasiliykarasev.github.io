@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Intent-Aware Long-Term Prediction of Pedestrian Motion"
+image: /images/icra16.png
+categories: research
+authors: "V. Karasev, A. Ayvaci, B. Heisele, and S. Soatto"
+venue: "ICRA"
+pdf: http://bheisele.com/karasevAHS16.pdf
+video: https://vimeo.com/157014891
+details: "/intentaware"
+id: icra16
+bibtex: "@inproceedings{karasevAHS16,
+\n  author = {Karasev, V. and Ayvaci, A. and Heisele, B. and Soatto, S.},
+\n  title = {Intent-Aware Long-Term Prediction of Pedestrian Motion},
+\n  booktitle = {ICRA},
+\n  year = {2016},
+\n  month = {May}
+\n}"
+---
+Forecasting what pedestrians intend to do is easier if they behave rationally. We show how this assumption simplifies motion prediction in the assisted/autonomous driving setting.

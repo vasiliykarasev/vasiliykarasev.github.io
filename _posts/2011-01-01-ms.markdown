@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Compressed sensing high resolution fMRI"
+image: /images/ms11.png
+categories: research
+details: "/ms"
+pdf: "/pdfs/ms_report.pdf"
+id: ms11
+---
+This was my MS project.<br>
+Compressed sensing in dynamic MRI is normally used to improve temporal resolution. Here we used it to improve <em>spatial</em> resolution. Reconstruction used the simplest possible TV regularization.<br>

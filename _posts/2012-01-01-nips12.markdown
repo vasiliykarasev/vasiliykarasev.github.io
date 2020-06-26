@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Controlled recognition bounds for visual learning and exploration"
+image: /images/nips12.png
+categories: research
+authors: "V. Karasev, A. Chiuso, and S. Soatto"
+venue: "NIPS"
+pdf: https://papers.nips.cc/paper/4594-controlled-recognition-bounds-for-visual-learning-and-exploration.pdf
+url: /activeselection.html
+bibtex: "@incollection{karasevCS12,
+\n  author = {Karasev, V. and Chiuso, A. and Soatto, S.},
+\n  title = {Controlled Recognition Bounds for Visual Learning and Exploration},
+\n  booktitle = {NIPS},
+\n  year = {2012},
+\n  month = {December}
+\n}"
+id: nips12
+---
+We show how to (greedily) search for an unknown object, under occlusions, quantization-scale, and uncertain measurements.

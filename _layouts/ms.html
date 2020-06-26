@@ -1,0 +1,106 @@
+---
+layout: ms
+---
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+
+<title>high resolution fMRI using compressed sensing</title>
+<link href="css/ms.css" rel="stylesheet">
+{% include ga.html %}
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+
+
+
+  <div style="margin:0 0 auto; display: block; text-align: center">
+  <h1>High Resolution fMRI using Compressed Sensing</h1>
+  </div>
+<div id="box">
+
+  This page illustrates some material that is challenging to convey in PDF format and gives a telegraphic summary of the work. <br>
+  For everything else, please refer to the <a href="/pdfs/ms_report.pdf">report</a>.
+</div>
+<p>
+<div id="box">
+It is well known that ''compressed sensing'' can be used to reconstruct MRI images from undersampled data. This undersampling can be used to improve temporal resolution (reduce scan time). It can also be used to improve spatial resolution (by focusing sampling on the high spatial frequencies). This is what we did in this project, with functional MRI (fMRI) as an application.<br>
+
+To perform the reconstruction, we used a simple TV regularization (across all four dimensions):
+<figure><img class="center-img" src="/images/ms/model.png"/></figure>
+<p> 
+<h2> Experiments </h2>
+<p>
+
+In these experiments we acquired the same number of samples (same scan time), but focused sampling on higher spatial frequencies. Each example shows ''acquisition'' -- raw aliased image (a least-l2-norm reconstruction), ''reconstruction'' -- result of our sparse-reconstruction-method, and the ''activation map'' - the image that the fMRI setting is actually interested in.
+
+<h2> 2x undersampling (2.4 matrix size increase)</h2>
+
+<figure>
+  <figcaption><strong>Acquisition</strong></figcaption>
+<img class="center-img" src="/images/ms/01_2x_backprojection.gif"/>
+<figcaption>
+Images acquired with 2.4 matrix size increase (2x undersampling relative to full acquisition).
+<em>left pair</em>: 70x70x32 standard acquisition (500x500x500 um3)<br>
+<em>right pair</em>: 110x110x32 CS acquisition (320x320x500 um3)<br>
+</figcaption>
+</figure>
+
+<figure>
+  <figcaption><strong>Reconstruction</strong></figcaption>
+<img class="center-img" src="/images/ms/02_2x_reconstruction.gif"/>
+<figcaption>
+  <em>Left</em>: 70x70x32 reconstruction (MIP)<br>
+  <em>Right</em>: 110x110x32 reconstruction (CS followed by MIP)<br>
+</figcaption>
+</figure>
+
+<figure>
+<figcaption><strong>Activation map</strong></figcaption>
+<img src="/images/ms/03_2x_analysis.gif"/>
+<figcaption>
+<em>Left</em>: coherence comparison. <em>Right</em>: phase comparison<br>.
+<em>Left pair</em>: 70x70x32, <em>right pair</em>: 110x110x32
+</figcaption>
+</figure>
+
+<h2> 3x undersampling (5.7 matrix size increase)</h2>
+
+
+<figure>
+  <figcaption><strong>Acquisition</strong></figcaption>
+<img class="center-img" src="/images/ms/01_backprojection.gif"/>
+<figcaption>
+  <em>Left</em>: 70x70x32 standard acquisition (500x500x500 um3)
+  <em>Right</em>: 167x167x32 CS acquisition (210x210x500 um3)<br>
+Notice the aliasing artifacts in the CS acquisition!
+</figcaption>
+</figure> 
+
+<figure>
+<figcaption><strong>Reconstruction</strong></figcaption>
+<img class="center-img" src="/images/ms/02_reconstruction.gif"/>
+<figcaption>
+  <em>Left</em>: 70x70x32 reconstruction (MIP)<br>
+  <em>Right</em>: 167x167x32 reconstruction (CS followed by MIP)<br>
+</figcaption>
+</figure>
+
+<figure>
+  <figcaption><strong>Activation map</strong></figcaption>
+<img class="center-img" src="/images/ms/03_analysis.gif"/>
+<figcaption>
+  <em>Left</em>: coherence comparison. <em>Right</em>: phase comparison. <em>Left pair</em>: 70x70x32, <em>right pair</em>: 167x167x32<br>
+Notice that the activation pattern is much more specific in the high resolution case (albeit somewhat more noisy).
+</figcaption>
+</figure>
+
+</div> 
+  </table>
+</body>
+</html> 
+
