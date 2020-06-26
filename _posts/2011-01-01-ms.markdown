@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Compressed sensing high resolution fMRI"
+title:  "High resolution fMRI using compressed sensing"
 image: /images/ms11.png
 categories: research
 details: "/ms"
