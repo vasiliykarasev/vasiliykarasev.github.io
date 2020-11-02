@@ -134,8 +134,21 @@ pre {
   padding: 4px;
   font-size: small;
 }
-.pub:hover {
+.pub {
   background-color:$extremelyLightGray;
+}
+.tab {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.active {
+  background-color:$extremelyLightGray;
+}
+.pub:hover {
+  background-color:$lighterGray;
+}
+.tab:hover {
+  background-color:$lighterGray;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
