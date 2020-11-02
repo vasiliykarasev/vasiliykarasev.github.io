@@ -13,14 +13,24 @@
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
-        {% include bio.html %}
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h1>Vasiliy Karasev</h1>
+              {%include social_buttons.html %}
+            </td>
+            <td style="padding:2.5%;width:300px; height:1px;">
+            </td>
+          </tr>
+        </table>
+
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td class="tab fade active" style="padding:2.5%;width:25%;vertical-align:middle">
+            <td class="tab fade inactive" style="padding:2.5%;width:25%;vertical-align:middle">
               <a href="/"><h2>Publications</h2></a>
             </td>
-            <td class="tab fade inactive" style="padding:2.5%;width:25%;vertical-align:middle">
+            <td class="tab fade active" style="padding:2.5%;width:25%;vertical-align:middle">
               <a href="/misc"><h2>Misc</h2></a>
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
@@ -32,46 +42,20 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'research' %}
+          {% if cat == 'misc' %}
+
           <tr class="pub fade">
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <a href="{{post.details}}"><img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" /></a>
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              {% if post.venue %}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              {% if post.oral %}(oral){% endif %}
-              {% else %}
+              <a href="{{post.details}}"<h3>{{post.title}}</h3></a>
               {{ post.date | date: "%Y" }}
-              {% endif %}
-
-              <br>
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.details %}
-              <a href="{{post.details}}">details</a> /
-              {% endif %}
-              {% if post.pdf %}
-              <a href="{{post.pdf}}">pdf</a>
-              {% endif %}
-              {% if post.bibtex %}
-              / <a href="javascript:togglebib('{{post.id}}_bib');">bibtex</a>
-              <div id="{{post.id}}_bib" style="display:none;"><pre class="bibtex">{{post.bibtex}}</pre></div>
-              {% endif %}
-
               <p></p>
               {{ post.excerpt }}
             </td>
           </tr>
+
           {% endif %}
           {% endfor %}
           {% endfor %}
@@ -79,19 +63,6 @@
         <br>
         <br>
 
-        <!--
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Projects</h2>
-              <p> These include coursework, side projects and unpublished research work.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        </table>
-        --!>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
